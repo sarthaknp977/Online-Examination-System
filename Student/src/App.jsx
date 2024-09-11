@@ -1,9 +1,19 @@
-import React from "react";
-
+import { Routes, Route } from "react-router-dom";
+import HomeStudent from "./Components/HomeStudent";
+import NavBar from "./Components/NavBar";
+import ViewNotices from "../../CommonComponents/src/Components/ViewNotices";
 const App = () => {
   return (
     <div>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<HomeStudent />} />
+        <Route path="/notices" element={<ViewNotices />} />
+        <Route path="/pastPapers" element={<HomeStudent />} />
+        <Route path="/schedules" element={<HomeStudent />} />
+        <Route path="/student" element={<HomeStudent />} />
+        <Route path="/student" element={<HomeStudent />} />
+      </Routes>
     </div>
   );
 };
