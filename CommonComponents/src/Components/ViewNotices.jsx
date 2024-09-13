@@ -1,4 +1,3 @@
-
 const ViewNotices = () => {
   return (
     <div>

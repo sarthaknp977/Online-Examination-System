@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import HomeStudent from "./Components/HomeStudent";
 import NavBar from "./Components/NavBar";
-import ViewNotices from "../../CommonComponents/src/Components/ViewNotices";
+import ViewNotices from "../node_modules/commoncomponents/src/Components/ViewNotices";
 const App = () => {
   return (
     <div>
